@@ -1,80 +1,97 @@
-Wallpaper Uploader 🌄
-A Django-powered web application for uploading and managing wallpapers. Built with Django for the backend and HTML/CSS for the frontend, this project enables users to upload their wallpaper images and view them via a simple, intuitive interface.
+# Wallpaper Uploader 🌄
 
-🎯 Features
-Image Upload: Users can upload wallpaper images (with validations on formats like JPG, PNG, etc.).
-Media Management: Uploaded images are stored under the media/ directory and served via Django's media configuration.
-User Interface: Clean and responsive UI built with HTML and CSS for browsing uploaded wallpapers.
-Django Admin Panel: Manage wallpapers directly through Django’s admin interface.
+A web application for uploading and managing wallpapers, powered by Django. This project enables users to upload, browse, and manage wallpaper images through a simple, responsive interface and Django’s admin panel.
 
-wallpaper_uploader/
-├── media/                 # Uploaded wallpapers
-├── myapp/                 # Django application
-│   ├── migrations/
-│   ├── models.py          # Wallpaper model
-│   ├── views.py           # Upload & display views
-│   ├── forms.py           # Image upload forms
-│   ├── templates/         # HTML templates
-│   └── urls.py            # App-specific routes
-├── db.sqlite3             # SQLite database
-├── manage.py              # Django management script
-└── requirements.txt       # Project dependencies
-🛠️ Getting Started
-Prerequisites
-Python 3.8+
-Django (e.g. 3.2+)
+---
 
-pip for installing dependencies
+## 🚀 Features
 
-Setup & Run
-Clone the repository
-git clone https://github.com/KavinsProjects/wallpaper_uploader.git
-cd wallpaper_uploader
-Create a virtual environment (optional but recommended)
+- **Image Upload:** Users can upload wallpaper images (supports JPG, PNG, etc., with validation).
+- **Media Management:** Uploaded images are stored in the `media/` directory and served via Django’s media configuration.
+- **User Interface:** Clean, responsive UI built with HTML and CSS for browsing uploaded wallpapers.
+- **Admin Panel:** Manage wallpapers directly using Django’s built-in admin interface.
 
-bash
-Copy
-Edit
-python3 -m venv venv
-source venv/bin/activate
-Install dependencies
+---
 
-bash
-Copy
-Edit
-pip install -r requirements.txt
-Run database migrations
+## 🗂️ Project Structure
 
-bash
-Copy
-Edit
-python manage.py migrate
-Start the development server
+---
 
-bash
-Copy
-Edit
-python manage.py runserver
-Access the app
+## 🛠️ Getting Started
 
-Frontend: http://127.0.0.1:8000/
+### Prerequisites
 
-Admin panel: http://127.0.0.1:8000/admin/
+- Python 3.8+
+- Django 3.2+  
+- pip
 
-✅ Usage Guide
-Navigate to the home page to upload a new wallpaper image.
+### Installation
 
-View all uploaded wallpapers in a gallery-style display.
+1. **Clone the repository**
+    ```bash
+    git clone https://github.com/KavinsProjects/wallpaper_uploader.git
+    cd wallpaper_uploader
+    ```
 
-Access the Django Admin site to view, delete, or manage wallpapers more thoroughly.
+2. **(Optional) Create and activate a virtual environment**
+    ```bash
+    python3 -m venv venv
+    source venv/bin/activate
+    ```
 
-📦 Tech Stack
-Backend: Django (Python)
+3. **Install dependencies**
+    ```bash
+    pip install -r requirements.txt
+    ```
 
-Frontend: HTML, CSS (static templates)
+4. **Run database migrations**
+    ```bash
+    python manage.py migrate
+    ```
 
-Database: SQLite (default); easy to switch to PostgreSQL or MySQL
+5. **Start the development server**
+    ```bash
+    python manage.py runserver
+    ```
 
-Media: Django's built-in media file handling
+### Access the Application
 
-🧩 Extending the Project
+- **Frontend:** [http://127.0.0.1:8000/](http://127.0.0.1:8000/)
+- **Admin Panel:** [http://127.0.0.1:8000/admin/](http://127.0.0.1:8000/admin/)
+
+---
+
+## ✅ Usage Guide
+
+- Visit the home page to upload a new wallpaper image.
+- Browse all uploaded wallpapers in a gallery-style display.
+- Log in to the Django Admin site to manage wallpapers (add, delete, edit).
+
+---
+
+## 📦 Tech Stack
+
+- **Backend:** Django (Python)
+- **Frontend:** HTML, CSS (static templates)
+- **Database:** SQLite (default, easily switchable to PostgreSQL/MySQL)
+- **Media:** Django’s built-in media file handling
+
+---
+
+## 🧩 Extending the Project
+
+- Add user authentication for uploads and management.
+- Implement categories or tags for wallpapers.
+- Enable image resizing/thumbnails.
+- Deploy to a cloud platform (Heroku, PythonAnywhere, etc.).
+- Replace SQLite with PostgreSQL or MySQL for production.
+
+---
+
+## 📄 License
+
+[MIT License](LICENSE)
+
+---
+
+Feel free to further customize or expand this template to fit your needs!
