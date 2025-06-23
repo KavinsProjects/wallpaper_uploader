@@ -14,6 +14,8 @@ A web application for uploading and managing wallpapers, powered by Django. This
 ---
 
 ## 🗂️ Project Structure
+![Screenshot 2025-06-23 173936](https://github.com/user-attachments/assets/9e5ee627-cec4-4e95-bd5a-1d2fffe185e1)
+
 wallpaper_uploader/ ├── media/ # Uploaded wallpapers ├── myapp/ # Main Django application │ ├── migrations/ │ ├── models.py # Wallpaper model │ ├── views.py # Upload & display views │ ├── forms.py # Image upload forms │ ├── templates/ # HTML templates │ └── urls.py # App-specific routes ├── db.sqlite3 # SQLite database (default) ├── manage.py # Django management script └── requirements.txt # Project dependencies
 ---
 
@@ -92,6 +94,5 @@ wallpaper_uploader/ ├── media/ # Uploaded wallpapers ├── myapp/ # Ma
 
 [MIT License](LICENSE)
 
----
+![Screenshot 2025-05-28 120053](https://github.com/user-attachments/assets/80a2ea4e-4fa3-43ce-a55e-452557e3970e)
 
-Feel free to further customize or expand this template to fit your needs!
